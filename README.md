@@ -55,7 +55,7 @@ Gerekli kütüphaneler yüklenir.
 Not: Makinede pip bulunmuyorsa ```yum install python3-pip -y```komuduyla kurulabilir.
 
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt --ignore-installed
 ```
 
 Uygulama çalıştırılır. 
@@ -63,11 +63,18 @@ Uygulama çalıştırılır.
 Not: Uygulama çalıştırılırken dış ağa açılabilmesi için alttaki komutun çalıştırılması gerekmektedir. 
 
 ```
-streamlit run app.py --server.port 8080 --server.address 0.0.0.0
+streamlit run app.py --server.port 8080
 ```
 
 Uygulama çalışınca alttaki gibi bir çıktı gelecektir. Bu çıktıda alttaki ip adresine girilerek uygulamaya erişilebilir. 
 
 ```
-Çıktı Eklenecek.
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+You can now view your Streamlit app in your browser.
+
+Network URL: http://172.31.60.151:8080
+External URL: http://44.200.137.97:8080
+
 ```
