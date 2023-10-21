@@ -18,7 +18,7 @@ Bu kod ile gerekli kütüphaneleri kurduktan sonra uygulamayı başlatmak için 
 Not: Öncelikle kod ile aynı dizine gitmeniz gerekmektedir.
 
 ```
-streamlit run app.py --app.port 8080
+streamlit run app.py --server.port 8080
 ```
 
 Bu kodu çalıştırdıktan sonra http://localhost:8080 portunda uygulamanın çalıştığını gözlemleyeceksiniz. 
@@ -61,7 +61,7 @@ Uygulama çalıştırılır.
 Not: Uygulama çalıştırılırken dış ağa açılabilmesi için alttaki komutun çalıştırılması gerekmektedir. 
 
 ```
-streamlit run --app.port 8080 --app.host 0.0.0.0
+streamlit run app.py --server.port 8080 --server.address 0.0.0.0
 ```
 
 Uygulama çalışınca alttaki gibi bir çıktı gelecektir. Bu çıktıda alttaki ip adresine girilerek uygulamaya erişilebilir. 
