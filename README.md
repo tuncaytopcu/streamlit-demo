@@ -52,6 +52,8 @@ cd streamlit-demo/
 
 Gerekli kütüphaneler yüklenir. 
 
+Not: Makinede pip bulunmuyorsa ```yum install python3-pip -y```komuduyla kurulabilir.
+
 ```
 pip install -r requirements.txt
 ```
