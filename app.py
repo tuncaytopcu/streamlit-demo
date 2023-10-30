@@ -5,7 +5,12 @@ api = SumAPI(username='kave', password='kave')
 
 def get_sentiment(text: str):
     result = api.sentiment_analysis(text, domain='general')
-    return result['evaluation']['label']
+    print(result)
+    try:
+        cevap = result['evaluation']['label']
+    except:
+        cevap = result
+    return cevap
 
 def get_color(sentiment):
     # Duygu analizine göre renk döndür
@@ -15,6 +20,8 @@ def get_color(sentiment):
         return "#FF8A80"  # Pastel Kırmızı
     elif sentiment == "Nötr":
         return "#FFD3B6"  # Pastel Turuncu
+    else:
+        return "#FFFF00" # Sarı
 
 st.title("SumAPI Duygu Analizi Uygulaması")
 
